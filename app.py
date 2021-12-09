@@ -4,15 +4,15 @@ from flask_migrate import Migrate
 from sqlalchemy import ForeignKey
 from sqlalchemy.orm import relationship
 
-# import os
-# import psycopg2
+import os
+import psycopg2
 
-# DATABASE_URL = os.environ['DATABASE_URL']
+DATABASE_URL = os.environ['DATABASE_URL']
 
 # conn = psycopg2.connect(DATABASE_URL, sslmode='require')
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:root@localhost:5432/chat-app-database'
+app.config['SQLALCHEMY_DATABASE_URI'] = DATABASE_URL
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
 
