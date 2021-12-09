@@ -14,7 +14,7 @@ DATABASE_URL = "postgres://lnxlvpzkblhmzv:24c911669b98a96ca53c5bb5fe4f278d0aa8bf
 
 app = Flask(__name__)
 
-app.config['SQLALCHEMY_DATABASE_URI'] = DATABASE_URL
+app.config['DATABASE_URL'] = DATABASE_URL
 db = SQLAlchemy(app)
 CORS(app)
 migrate = Migrate(app, db)
