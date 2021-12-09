@@ -5,7 +5,7 @@ from sqlalchemy import ForeignKey
 from sqlalchemy.orm import relationship
 from flask_cors import CORS
 
-DATABASE_URL = "postgres://lnxlvpzkblhmzv:24c911669b98a96ca53c5bb5fe4f278d0aa8bf687deba7b73a6ac8756271c044@ec2-54-147-107-18.compute-1.amazonaws.com:5432/d6716ebracrnpj"#os.environ['DATABASE_URL']
+DATABASE_URL = 'postgres://lnxlvpzkblhmzv:24c911669b98a96ca53c5bb5fe4f278d0aa8bf687deba7b73a6ac8756271c044@ec2-54-147-107-18.compute-1.amazonaws.com:5432/d6716ebracrnpj'#os.environ['DATABASE_URL']
 
 app = Flask(__name__)
 
