@@ -5,6 +5,6 @@ from .app import db
 from .app import Users, Groups, Messages
 
 @click.command(name='create_tables')
-@with_appcontext
+@with_app.appcontext
 def create_tables():
     db.create_all()
