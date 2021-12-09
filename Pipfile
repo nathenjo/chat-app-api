@@ -4,6 +4,25 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+alembic = "*"
+click = "*"
+flask = "*"
+flask-migrate = "*"
+flask-sqlalchemy = "*"
+greenlet = "*"
+importlib-metadata = "*"
+importlib-resources = "*"
+itsdangerous = "*"
+jinja2 = "*"
+mako = "*"
+markupsafe = "*"
+postgres = "*"
+psycopg2-binary = "*"
+psycopg2-pool = "*"
+sqlalchemy = "*"
+werkzeug = "*"
+zipp = "*"
+flask-cors = "*"
 
 [dev-packages]
 
