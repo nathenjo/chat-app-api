@@ -23,6 +23,7 @@ sqlalchemy = "*"
 werkzeug = "*"
 zipp = "*"
 flask-cors = "*"
+gunicorn = "*"
 
 [dev-packages]
 
