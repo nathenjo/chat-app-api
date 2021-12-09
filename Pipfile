@@ -24,6 +24,7 @@ werkzeug = "*"
 zipp = "*"
 flask-cors = "*"
 gunicorn = "*"
+psycopg2 = "*"
 
 [dev-packages]
 
