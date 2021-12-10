@@ -70,8 +70,8 @@ class Messages(db.Model):
         return f"<Message {self.user_id}"
 
 
-def init_db():
-    db.create_all()
+# def init_db():
+#     db.create_all()
 
 @app.route('/users', methods=['GET'])
 def fetch_users():
@@ -212,4 +212,4 @@ def hello():
 
 if __name__ == '__main__':
     app.run(debug=True)
-    init_db()
+    # init_db()
