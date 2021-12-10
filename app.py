@@ -69,6 +69,10 @@ class Messages(db.Model):
     def __repr__(self):
         return f"<Message {self.user_id}"
 
+
+def init_db():
+    db.create_all()
+
 @app.route('/users', methods=['GET'])
 def fetch_users():
     all_users = Users.query.all()
@@ -208,3 +212,4 @@ def hello():
 
 if __name__ == '__main__':
     app.run(debug=True)
+    init_db()
